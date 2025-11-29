@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria - Angelica Caffè</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        a {
+            display: block;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <!-- Esempio di come inserire le immagini -->
+        <a href="https://www.angelicacaffe.it/immagini/immagine1_large.jpg" target="_blank">
+            <img src="https://www.angelicacaffe.it/immagini/immagine1.jpg" alt="Immagine 1">
+        </a>
+        <a href="https://www.angelicacaffe.it/immagini/immagine2_large.jpg" target="_blank">
+            <img src="https://www.angelicacaffe.it/immagini/immagine2.jpg" alt="Immagine 2">
+        </a>
+        <a href="https://www.angelicacaffe.it/immagini/immagine3_large.jpg" target="_blank">
+            <img src="https://www.angelicacaffe.it/immagini/immagine3.jpg" alt="Immagine 3">
+        </a>
+        <a href="https://www.angelicacaffe.it/immagini/immagine4_large.jpg" target="_blank">
+            <img src="https://www.angelicacaffe.it/immagini/immagine4.jpg" alt="Immagine 4">
+        </a>
+        <!-- Aggiungi altre immagini come necessario -->
+    </div>
+
+</body>
+</html>
